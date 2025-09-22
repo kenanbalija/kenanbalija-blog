@@ -219,7 +219,6 @@ export async function getSortedPosts() {
     return import.meta.env.PROD ? data.draft !== true : true
   })
 
-  console.log({ allPosts })
   const sortedPosts = allPosts.sort((a, b) => {
     return a.data.published < b.data.published ? -1 : 1
   })
