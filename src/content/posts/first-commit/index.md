@@ -1,7 +1,7 @@
 ---
 title: 'First Commit'
 published: 2025-09-22
-draft: true
+draft: false
 tags: ['blog']
 toc: true
 coverImage:
