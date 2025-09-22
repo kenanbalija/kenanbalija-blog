@@ -1,6 +1,6 @@
 ---
 avatarImage:
-  src: './avatar.jpg'
+  src: './keno-pixelated.png'
   alt: 'My avatar'
 ---
 
