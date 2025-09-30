@@ -1,5 +1,5 @@
 ---
-title: 'First Commit'
+title: 'Second Commit'
 published: 2025-09-30
 draft: false
 tags: ['blog', 'react']
