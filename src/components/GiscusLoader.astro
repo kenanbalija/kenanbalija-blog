@@ -59,7 +59,10 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     script.setAttribute('data-emit-metadata', '0')
     // Setting this to 'bottom' doesn't work. Not sure why.
     script.setAttribute('data-input-position', 'top')
-    script.setAttribute('data-theme', `${origin}/giscus/${theme}.css`)
+    // Temporarily use a built-in theme instead of custom CSS to fix connection issues
+    // TODO: Debug custom theme CSS loading on production
+    const giscusTheme = theme.includes('light') ? 'light' : 'dark'
+    script.setAttribute('data-theme', giscusTheme)
     script.setAttribute('data-lang', 'en')
     script.setAttribute('loading', 'lazy')
     script.crossOrigin = 'anonymous'
@@ -82,8 +85,10 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
       console.error('Giscus iframe not found after retries')
       return
     }
+    // Temporarily use a built-in theme instead of custom CSS
+    const giscusTheme = theme.includes('light') ? 'light' : 'dark'
     giscusFrame.contentWindow?.postMessage(
-      { giscus: { setConfig: { theme: `${origin}/giscus/${theme}.css` } } },
+      { giscus: { setConfig: { theme: giscusTheme } } },
       'https://giscus.app',
     )
   }
