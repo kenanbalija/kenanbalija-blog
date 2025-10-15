@@ -151,13 +151,10 @@ const config: SiteConfig = {
   },
   // Social links to display in the footer.
   socialLinks: {
-    github: 'https://github.com/stelcodes/multiterm-astro',
-    mastodon: 'https://github.com/stelcodes/multiterm-astro',
-    email: 'https://github.com/stelcodes/multiterm-astro',
-    linkedin: 'https://github.com/stelcodes/multiterm-astro',
-    bluesky: 'https://github.com/stelcodes/multiterm-astro',
-    twitter: 'https://github.com/stelcodes/multiterm-astro',
-    rss: true, // Set to true to include an RSS feed link in the footer
+    github: 'https://github.com/kenanbalija',
+    email: 'kenanbalija.dev@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/kenanbalija/',
+    rss: false, // Set to true to include an RSS feed link in the footer
   },
   // Configuration for Giscus comments.
   // To set up Giscus, follow the instructions at https://giscus.app/
@@ -166,10 +163,10 @@ const config: SiteConfig = {
   // IMPORTANT: Update giscus.json in the root of the project with your own website URL
   // If you don't want to use Giscus, set this to undefined.
   giscus: {
-    repo: 'stelcodes/multiterm-astro',
-    repoId: 'R_kgDOPNnBig',
+    repo: 'kenanbalija/kenanbalija-blog',
+    repoId: 'R_kgDOP0tQsw',
     category: 'Giscus',
-    categoryId: 'DIC_kwDOPNnBis4CteOc',
+    categoryId: 'DIC_kwDOP0tQs84Cwq01',
     reactionsEnabled: true, // Enable reactions on post itself
   },
   // These are characters available for the character chat feature.
